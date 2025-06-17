@@ -1782,3 +1782,248 @@ nav a:hover {
 
 
 
+/********************** footer content **********************/
+#footer .container {
+    width: 1440px;
+    height: 308px;
+    margin: 0 auto;
+    padding: 87px 87px 37px 84px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#footer .footer-content {
+    max-width: 1267px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/* footer top */
+#footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 77px;
+}
+
+#footer .footer-top-left {
+    position: relative;
+}
+
+#footer .footer-top-left h1 {
+    position: relative;
+    font-family: 'Cinzel' !important;
+    color: rgba(38, 38, 38, 1);
+    font-size: 36px;
+    font-weight: 400;
+    z-index: 2 !important;
+}
+
+#footer .background-h1 {
+    position: absolute;
+    top: 12px;
+    left: 89px;
+    width: 147px;
+    height: 20px;
+    background-color: rgba(76, 224, 215, 1);
+    z-index: 1 !important;
+}
+
+#footer .footer-top-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#footer .footer-top-right-text {
+    min-width: 227px;
+}
+
+#footer .footer-top-right-text-span {
+    color: rgba(38, 38, 38, 1);
+    font-size: 26px;
+    font-weight: 700;
+
+}
+
+#footer .footer-top-right-socials {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    height: 42px;
+}
+
+#footer .footer-top-right-socials div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .footer-top-right-socials img {
+    width: 31px !important;
+    height: 31px !important;
+    transition: all 0.3s ease;
+}
+
+#footer .linkedin {
+    width: 32px;
+}
+
+#footer .footer-top-right-socials img:hover {
+    cursor: pointer;
+    transform: rotate(360deg) scale(1.7);
+}
+
+
+
+/* footer line */
+#footer .footer-line-middle {
+    border: 1px solid rgba(188, 188, 188, 1);
+    margin-bottom: 34px;
+}
+
+
+
+/* footer bottom */
+#footer .footer-bottom {
+    min-width: 413px;
+}
+
+#footer .footer-bottom-content {
+    color: rgba(38, 38, 38, 1);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+/* responsive */
+
+@media (max-width: 1440px) {
+
+    #footer .container {
+        width: auto;
+        height: auto;
+        padding: 60px 40px;
+    }
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    #footer .footer-top {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    #footer .footer-top-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #footer .footer-top-right-socials {
+        justify-content: flex-start;
+    }
+
+    #footer .footer-bottom {
+        text-align: center;
+    }
+
+    #footer .footer-top-right-text {
+        min-width: 0;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    #footer .container {
+        padding: 40px 30px;
+    }
+
+    #footer .footer-top-left h1 {
+        font-size: 28px;
+    }
+
+    #footer .footer-top-right-text-span {
+        font-size: 22px;
+    }
+
+    #footer .footer-top-right-socials img {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    #footer .background-h1 {
+        left: 60px;
+        width: 120px;
+        height: 16px;
+    }
+
+}
+
+
+
+@media (max-width: 481px) {
+
+    #footer .container {
+        padding: 30px 20px;
+    }
+
+    #footer .footer-top {
+        margin-bottom: 50px;
+    }
+
+    #footer .footer-top-left h1 {
+        font-size: 22px;
+    }
+
+    #footer .footer-top-right-text-span {
+        font-size: 18px;
+    }
+
+    #footer .footer-top-right-socials {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    #footer .footer-bottom {
+        min-width: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #footer .footer-bottom-content {
+        font-size: 12px;
+        max-width: fit-content;
+    }
+
+    #footer .background-h1 {
+        top: 10px;
+        left: 50px;
+        width: 100px;
+        height: 14px;
+    }
+
+}
+
+
+
+
+
+
+
+
