@@ -1397,3 +1397,388 @@ nav a:hover {
 
 
 
+/************************ trending bottom section ************************/
+#trending-bottom-section {
+    margin-bottom: 69px;
+}
+
+#trending-bottom-section .container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/************************ trending bottom section - Cards ************************/
+#trending-bottom-section .card {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    height: 368px;
+    width: 1204px;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+#trending-bottom-section .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+#trending-bottom-section .card.second-card {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+
+
+
+/************************ trending bottom section - Left Div ************************/
+#trending-bottom-section .left-div {
+    position: relative;
+    height: 368px;
+    width: 547px;
+    border-radius: 20px;
+    margin-right: 37px;
+}
+
+#trending-bottom-section .left-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+#trending-bottom-section .left-div button {
+    position: absolute;
+    top: 25px;
+    left: 34px;
+    background-color: #262626;
+    color: #FFFFFF;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 175px;
+    height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(0.36deg);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+#trending-bottom-section .left-div button:hover {
+    background-color: #555555;
+    font-size: 14px;
+    transform: scale(1.05) translateY(-2px);
+}
+
+
+
+
+/************************ trending bottom section - Right Div ************************/
+#trending-bottom-section .right-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#trending-bottom-section .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 39px 0px 31px;
+}
+
+
+
+
+/************************ Card Body - Top Area ************************/
+#trending-bottom-section .card-body-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#trending-bottom-section .card-body-top-left {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+/*** small image ***/
+#trending-bottom-section .card-body-top-left-image {
+    width: 66px;
+    height: 51px;
+    object-fit: cover;
+    transition: all 0.7s ease;
+    cursor: pointer;
+    position: absolute;
+}
+
+#trending-bottom-section .card-body-top-left-image.expanded {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+}
+
+
+/*** top area left text ***/
+#trending-bottom-section .card-body-top-left-text {
+    min-width: 168px;
+
+    /* small image size + spacing between them */
+    margin-left: calc(66px + 14px);
+}
+
+#trending-bottom-section .card-body-top-left-text span {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(188, 188, 188, 1);
+}
+
+
+/*** top area right text ***/
+#trending-bottom-section .card-body-top-right {
+    min-width: 168px;
+    margin-right: 58px;
+}
+
+#trending-bottom-section .card-body-top-right span {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(188, 188, 188, 1);
+}
+
+
+
+
+/************************ Card Body - Title ************************/
+#trending-bottom-section .card-body-title {
+    margin-top: 36px;
+    max-width: 543px;
+    min-height: 94px;
+}
+
+#trending-bottom-section .card-body-title h5 {
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(38, 38, 38, 1);
+}
+
+
+
+
+/************************ Card Body - Text ************************/
+#trending-bottom-section .card-body-text {
+    max-width: 569px;
+    min-height: 73px;
+}
+
+#trending-bottom-section .card-body-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    color: rgba(38, 38, 38, 1);
+}
+
+
+
+
+/************************ Card Body - Bottom Area ************************/
+#trending-bottom-section .card-body-bottom {
+    margin-top: 19px;
+}
+
+#trending-bottom-section .card-body-bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+#trending-bottom-section .card-body-bottom-content-img {
+    width: max-content;
+    height: 39px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#trending-bottom-section .card-body-bottom-content img {
+    margin-top: 3px;
+    width: 22px;
+    height: 13px;
+    transition: all 0.3s ease;
+}
+
+#trending-bottom-section.card-body-bottom-content-a {
+    max-width: 215px;
+}
+
+#trending-bottom-section .card-body-bottom-content a {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: rgba(76, 224, 215, 1);
+    transition: all 0.3s ease;
+}
+
+#trending-bottom-section .card-body-bottom-content:hover {
+    cursor: pointer;
+}
+
+#trending-bottom-section .card-body-bottom-content:hover .card-body-bottom-content-a a {
+    color: rgb(0, 131, 122);
+    letter-spacing: 5px;
+}
+
+#trending-bottom-section .card-body-bottom-content:hover .card-body-bottom-content-img img {
+    transform: translateX(15px);
+}
+
+
+
+
+
+/************************ Responsive ************************/
+
+/*** Responsive for < 1250px ***/
+@media (max-width: 1250px) {
+
+    #trending-bottom-section .card,
+    #trending-bottom-section .card-body-top,
+    #trending-bottom-section .card-body-title,
+    #trending-bottom-section .card-body-text,
+    #trending-bottom-section .card-body-bottom {
+        width: auto;
+    }
+
+    #trending-bottom-section .card-body-top,
+    #trending-bottom-section .card-body-title,
+    #trending-bottom-section .card-body-text,
+    #trending-bottom-section .card-body-bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #trending-bottom-section .card-body-top-right {
+        min-width: 168px;
+        margin-right: 28px;
+    }
+
+    #trending-bottom-section .card-body-text {
+        padding-right: 45px;
+    }
+
+}
+
+
+/*** Responsive for < 1158px ***/
+@media (max-width: 1158px) {
+
+    #trending-bottom-section .left-div {
+        width: 440px;
+    }
+
+}
+
+
+/*** Responsive for < 992px ***/
+@media (max-width: 992px) {
+
+    #trending-bottom-section .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #trending-bottom-section .card {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    #trending-bottom-section .left-div {
+        width: 100%;
+        height: 440px;
+        margin-right: 0;
+    }
+
+    #trending-bottom-section .right-div {
+        padding: 20px;
+    }
+
+}
+
+
+/*** Responsive for < 575px ***/
+@media (max-width: 575px) {
+
+    #trending-bottom-section .card-body-top-left-text,
+    #trending-bottom-section .card-body-top-right {
+        min-width: 0;
+    }
+
+    #trending-bottom-section .left-div img {
+        object-fit: cover;
+        object-position: calc(30% - 50px) center;
+    }
+
+}
+
+
+/*** Responsive for < 456px ***/
+@media (max-width: 456px) {
+
+    #trending-bottom-section .card-body-title h5 {
+        font-size: 20px;
+    }
+
+    #trending-bottom-section .card-body-top-right {
+        margin-right: 0px;
+    }
+
+    #trending-bottom-section .card-body-text {
+        margin-top: 20px;
+    }
+
+}
+
+
+/*** Responsive for < 394px ***/
+@media (max-width: 394px) {
+
+    #trending-bottom-section .card-body-top,
+    #trending-bottom-section .card-body-top-right {
+        display: block;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
