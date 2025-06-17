@@ -1,15 +1,15 @@
  /* General styles */
 * {
-    box-sizing: border-box;
-    text-decoration: none !important;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #F9F9F9;
-    font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -115,4 +115,288 @@ nav a:hover {
   margin-left: 57px;
   color: #fff;
 }
+
+
+
+
+/******************* header **********************/
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+.header-container {
+  width: 1272px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 37px 84px 47px;
+}
+
+.logo-icon {
+    width: 234px;
+    height: 49px;
+    cursor: pointer;
+}
+
+nav {
+  display: flex;
+  margin-left: 255px;
+  margin-right: 66px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #262626;
+  border-radius: 40px;
+  padding: 9px 31px;
+  transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: #4CE0D7;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+    transform: translateY(6px);
+    transition: 0.5s;
+}
+
+.search-icon {
+  width: 47px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-icon:hover{
+    background-color: #4CE0D7;
+    border-radius: 90px;
+    transition: background-color 0.5s, color 0.5s;
+    transition: 0.5s;
+}
+
+
+.first-section {
+  background-image: url('./assets/pexels-andrea-piacquadio-994234 1.png');
+  width: 1272px;
+  height: 559px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 25px;
+  margin-bottom: 73px;
+  box-sizing: border-box;
+  margin-left: 84px;
+}
+
+
+.Lux {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 2px;
+  margin-left: 57px;
+  margin-bottom: 22px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.first-section-img {
+  margin-left: 57px;
+  margin-bottom: 19px;
+}
+
+.first-section-content p:not(.Lux) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-left: 57px;
+  color: #fff;
+}
+
+
+
+
+
+/********************* Topics top cards *********************/
+#topics-top-section .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 84px;
+}
+
+#topics-top-section .topics-content h1 {
+    margin-bottom: 48px;
+    color: rgba(38, 38, 38, 1);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#topics-top-section .topics-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 88px;
+}
+
+
+/********************* Topics top card *********************/
+#topics-top-section .card {
+    width: 204px;
+    height: 291px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 0 29px 29px 29px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+#topics-top-section .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#topics-top-section .card:hover img {
+    /* filter function is used to apply effects without modifying the actual content of the element itself. */
+    filter: brightness(0%);
+}
+
+#topics-top-section .card h2 {
+    color: rgba(38, 38, 38, 1);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 29px;
+}
+
+#topics-top-section .card a {
+    background-color: rgba(76, 224, 215, 1);
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 40px;
+    color: rgba(38, 38, 38, 1);
+    transition: all 0.3s ease;
+}
+
+#topics-top-section .card a:hover {
+    transform: scale(1.2);
+    color: rgb(96, 96, 96);
+    background-color: rgb(131, 255, 247);
+    cursor: pointer;
+}
+
+/* first card */
+#topics-top-section .first img {
+    margin-bottom: 20px;
+    padding-top: 51px;
+}
+
+/* second card */
+#topics-top-section .second img {
+    margin-bottom: 5px;
+    padding-top: 51px;
+}
+
+/* third card */
+#topics-top-section .third img {
+    margin-bottom: 18px;
+    padding-top: 41px;
+}
+
+/* fourth card */
+#topics-top-section .fourth img {
+    margin-bottom: 27px;
+    padding-top: 43px;
+}
+
+/* fifth card */
+#topics-top-section .fifth img {
+    margin-bottom: 27px;
+    padding-top: 46px;
+}
+
+/* sixth card */
+#topics-top-section .sixth img {
+    margin-bottom: 24px;
+    padding-top: 33px;
+}
+
+
+
+/********************* middle line *********************/
+#topics-top-section .middle-line {
+    border: 1px solid rgba(188, 188, 188, 1);
+    margin-bottom: 53px;
+}
+
+
+
+/***************************** responsive *****************************/
+@media (max-width: 1430px) {
+
+    #topics-top-section .topics-cards {
+        flex-wrap: wrap;
+    }
+
+    #topics-top-section .card {
+        width: 320px;
+    }
+
+}
+
+
+@media (max-width: 1148px) {
+
+    #topics-top-section .card {
+        width: 400px;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+
+    #topics-top-section .card {
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 582px) {
+
+    #topics-top-section .card {
+        width: 100%;
+    }
+
+    #topics-top-section .card h2 {
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
 

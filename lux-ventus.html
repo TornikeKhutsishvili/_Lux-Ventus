@@ -1,28 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- poppins font import -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- aos css cdn - animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- css file -->
     <link rel="stylesheet" href="lux-ventus.css" />
 
     <!-- title -->
     <title>Lux Ventus</title>
-</head>
-<body>
-
+  </head>
+  <body>
 
     <div class="container">
+
+    <header><div class="header-container">
+
         <header><div class="header-container">
+
       <div class="logo">
         <!-- Logo image -->
         <img class="logo-icon" src="./assets/logo.png" alt="logo" />
@@ -42,7 +46,10 @@
         <img src="./assets/shape.png" alt="search" />
       </div>
     </div></header>
+
+
     
+
 
 
     <section class="first-section">
@@ -52,6 +59,80 @@
       <p>We like to gossip about everything, but we will<br>never forget the daily fashion dose.</p>
     </div></section>
     </div>
+
+
+    <!-- Topics Top card -->
+    <!-- start - Topics Top Section -->
+  <section id="topics-top-section">
+    <div class="container">
+
+      <!-- start - Topics Top Section -->
+      <div class="topics-content">
+
+        <!-- Topics title -->
+        <h1>Topics</h1>
+
+        <!-- start - topics cards -->
+        <div class="topics-cards">
+
+          <!-- start - first topics cards -->
+          <div class="card first">
+            <img src="topics_top_card_image/lingerie-underwear.png" alt="Lingerie">
+            <h2>Lingerie</h2>
+            <a href="#">View More</a>
+          </div>
+          <!-- end - first topics cards -->
+
+          <!-- start - second topics cards -->
+          <div class="card second">
+            <img src="topics_top_card_image/dress.png" alt="Lingerie">
+            <h2>Spring</h2>
+            <a href="#">View More</a>
+          </div>
+          <!-- end - second topics cards -->
+
+          <!-- start - third topics cards -->
+          <div class="card third">
+            <img src="topics_top_card_image/chakra.png" alt="Lingerie">
+            <h2>Yoga</h2>
+            <a href="#">View More</a>
+          </div>
+          <!-- end - third topics cards -->
+
+          <!-- start - fourth topics cards -->
+          <div class="card fourth">
+            <img src="topics_top_card_image/lipstick.png" alt="Lingerie">
+            <h2>Glow</h2>
+            <a href="#">View More</a>
+          </div>
+          <!-- end - fourth topics cards -->
+
+          <!-- start - fifth topics cards -->
+          <div class="card fifth">
+            <img src="topics_top_card_image/dress-wedding-dress.png" alt="Lingerie">
+            <h2>Ensembles</h2>
+            <a href="#">View More</a>
+          </div>
+          <!-- end - fifth topics cards -->
+
+          <!-- start - sixth topics cards -->
+          <div class="card sixth">
+            <img src="topics_top_card_image/mask-theater.png" alt="Lingerie">
+            <h2>Skin Care</h2>
+            <a href="#">View More</a>
+          </div>
+          <!-- end - sixth topics cards -->
+
+        </div>
+        <!-- end - topics cards -->
+
+      </div>
+
+      <div class="middle-line"></div>
+
+    </div>
+  </section>
+  <!-- end - Topics Top Section -->
 
     
     <section></section>
@@ -66,57 +147,39 @@
 
     <footer></footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- start scripts -->
 
     <!-- start script - card-body-top-left-image -->
     <script>
-        const images = document.querySelectorAll('.card-body-top-left-image');
+      const images = document.querySelectorAll('.card-body-top-left-image');
 
-        images.forEach((img) => {
-            let isExpanded = false;
+      images.forEach((img) => {
+        let isExpanded = false;
 
-            img.addEventListener('click', function () {
-                // If expanded, collapse it; if collapsed, expand it
-                isExpanded = !isExpanded;
+        img.addEventListener('click', function () {
+          // If expanded, collapse it; if collapsed, expand it
+          isExpanded = !isExpanded;
 
-                if (isExpanded) {
-                    this.src = this.dataset.full;
-                    this.classList.add('expanded');
-                } else {
-                    this.src = this.dataset.small;
-                    this.classList.remove('expanded');
-                }
-            });
+          if (isExpanded) {
+            this.src = this.dataset.full;
+            this.classList.add('expanded');
+          } else {
+            this.src = this.dataset.small;
+            this.classList.remove('expanded');
+          }
         });
+      });
     </script>
     <!-- end script - card-body-top-left-image -->
-
-
 
     <!-- aos js cdn - animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Initialize AOS -->
     <script>
-        AOS.init();
+      AOS.init();
     </script>
 
     <!-- end scripts -->
-
-</body>
+  </body>
 </html>
